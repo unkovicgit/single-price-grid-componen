@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+	--cyan: hsl(179, 62%, 43%);
+	--cyan-tr: hsla(179, 62%, 43%, 0.8);
+	--bright-yellow: hsl(71, 73%, 54%);
+	--light-gray: hsl(204, 43%, 93%);
+	--grayish-blue: hsl(218, 22%, 67%);
+	--font: "Karla", sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--light-gray);
+	color: var(--grayish-blue);
+	padding: 5rem 2rem;
+	font-family: var(--font);
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+@media (min-width: 800px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.card {
+	padding: 2rem 1.5rem;
+}
+
+figure {
+	max-width: 22rem;
+	width: 100%;
+	margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+	.card {
+		padding: 2.5rem;
+	}
+
+	figure {
+		max-width: 40rem;
+		width: 100%;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+.card--white {
+	background-color: #fff;
+	grid-column: span 2;
+}
+
+.card--cyan {
+	background-color: var(--cyan);
+	color: #fff;
+}
+
+.card--cyan-tran {
+	background-color: var(--cyan-tr);
+	color: #fff;
+}
+
+h1,
+h2 {
+	font-weight: 700;
+}
+
+.title {
+	font-size: 1.3rem;
+	color: var(--cyan);
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+	.title {
+		font-size: 1.5rem;
+	}
+}
+
+.subtitle {
+	color: var(--bright-yellow);
+	margin-bottom: 1rem;
+}
+
+@media (min-width: 800px) {
+	.subtitle,
+	h2 {
+		font-size: 1.3rem;
+	}
+}
+
+.description {
+	font-size: 0.8rem;
+}
+
+@media (min-width: 800px) {
+	.description {
+		font-size: 1rem;
+	}
+}
+
+.price {
+	display: flex;
+	align-items: center;
+}
+
+.price__money {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.price__per {
+	color: #fff;
+	opacity: 0.7;
+	font-size: 0.8rem;
+	margin-left: 0.5rem;
+}
+
+.access {
+	font-size: 0.9rem;
+	font-weight: 700;
+}
+
+.btn {
+	display: block;
+	background-color: var(--bright-yellow);
+	width: 100%;
+	border-radius: 5px;
+	padding: 0.7em 0;
+	text-align: center;
+	margin-top: 2rem;
+	font-weight: 700;
+}
+
+.card__list {
+	margin-top: 1rem;
+	color: #fff;
+	opacity: 0.7;
+	font-size: 0.9rem;
+}
